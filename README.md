@@ -17,10 +17,17 @@ $ cargo vistree -o Cargo.dot && dot -Tsvg Cargo.dot -o Cargo.svg
 cargo install cargo-vistree
 ```
 
-## Note
-I would like to mention here some nice crates for removing unused dependencies:
-* [machete](https://crates.io/crates/cargo-machete) [fast analyze source code]
-* [udeps](https://crates.io/crates/cargo-udeps) [more accurately, slower]
- 
+Install graphviz:
+```
+$ brew install graphviz
+OR
+$ sudo apt -y install graphviz
+```
 
-#### KEEP YOUR DEPENDENCIES FRESH AND CLEAN!
+
+### KEEP YOUR DEPENDENCIES FRESH AND CLEAN!
+I would like to mention here awesome utils:
+* [machete](https://crates.io/crates/cargo-machete) [remove unused deps: fast analyze source code]
+* [udeps](https://crates.io/crates/cargo-udeps) [remove unused deps: more accurately, slower]
+* [dependabot](https://github.com/dependabot) [update deps]
+* [deny](https://crates.io/crates/cargo-deny) [linter for deps]
