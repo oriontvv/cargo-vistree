@@ -1,3 +1,6 @@
 *.rs linguist-detectable=true
 Makefile linguist-detectable=false
+*.svg linguist-detectable=false
+*.md linguist-detectable=false
+*.toml linguist-detectable=false
 *.* linguist-detectable=false

@@ -6,7 +6,7 @@
 ## Usage:
 
 ```bash
-$ cargo vistree -o Cargo.dot && dot -Tsvg Cargo.dot -o Cargo.svg
+cargo vistree -o Cargo.dot && dot -Tsvg Cargo.dot -o Cargo.svg
 ```
 
 
