@@ -9,10 +9,18 @@
 $ cargo vistree -o Cargo.dot && dot -Tsvg Cargo.dot -o Cargo.svg
 ```
 
-By default `cargo-vistree` uses `pretty` format(can be disabled with `--compact` option).
-Beware of `null`s, some formats don't support them (e.g. toml).
+
+![Output of `cargo modules generate tree …`](Cargo.svg)
 
 ## Installation:
 ```
 cargo install cargo-vistree
 ```
+
+## Note
+I would like to mention here some nice crates for removing unused dependencies:
+* [machete](https://crates.io/crates/cargo-machete) [fast analyze source code]
+* [udeps](https://crates.io/crates/cargo-udeps) [more accurately, slower]
+ 
+
+#### KEEP YOUR DEPENDENCIES FRESH AND CLEAN!
