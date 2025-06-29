@@ -4,8 +4,8 @@ use std::path::Path;
 
 use cargo_lock::{Dependency, Lockfile};
 use clap::Parser;
-use petgraph::dot::{Config, Dot};
 use petgraph::Graph;
+use petgraph::dot::{Config, Dot};
 
 #[derive(Parser, Debug)]
 #[clap(about, version, author)]
