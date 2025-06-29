@@ -39,7 +39,7 @@ fn generate_dot(lockfile_path: &str, output_path: &str) {
     }
 
     let dot = Dot::with_config(&graph, &[Config::EdgeNoLabel]);
-    let dot_str = format!("{}", dot);
+    let dot_str = format!("{dot}");
 
     fs::write(output_path, dot_str).expect("Can't dump result dot file");
 }
